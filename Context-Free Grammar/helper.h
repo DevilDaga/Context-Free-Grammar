@@ -70,11 +70,11 @@ inline void replaceAll ( std::vector<T>& vec, std::vector<T> from, std::vector<T
 {
 	while ( true )
 	{
-		auto it = search ( vec.begin ( ),
-						   vec.end ( ),
-						   from.begin ( ),
-						   from.end ( )
-						   );
+		auto it = std::search ( vec.begin ( ),
+								vec.end ( ),
+								from.begin ( ),
+								from.end ( )
+								);
 		if ( it == vec.end ( ) )
 		{
 			updated.push_back ( vec );
@@ -109,7 +109,7 @@ inline bool contains ( std::vector<T> vec, T x )
 }
 
 template<typename T>
-inline bool erase ( std::vector<T> vec, T x )
+inline bool erase ( std::vector<T>& vec, T x )
 {
 	LOOP ( i, vec.size ( ) )
 	{

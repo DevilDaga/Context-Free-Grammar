@@ -137,8 +137,9 @@ void Variable::consume ( Variable *var )
 			 *
 			 S->Abc|d
 			 A->Ad|a
-
+			 S->consume(A);
 			 S->Adbc|abc|d
+			 S->consume(A);
 			 S->Addbc|adbc|abc|d
 			 */
 		}

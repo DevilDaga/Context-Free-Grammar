@@ -25,6 +25,8 @@ public:
 
 	void sort_V ( );
 
+	string parse ( string str );
+
 	string toString ( );
 
 	inline friend std::ostream& operator<<( std::ostream &os, CFG& cfg )

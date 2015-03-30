@@ -255,7 +255,6 @@ void CFG::remove_epsilon ( )
 	}
 	if ( var_eps )
 		V.erase ( V.begin ( ) + index_eps );
-	auto garb = "garbage for debugging";
 }
 
 void CFG::sort_V ( )
@@ -278,6 +277,13 @@ void CFG::sort_V ( )
 		}
 	}
 	V = sorted;
+}
+
+string CFG::parse ( string str )
+{
+	string result;
+
+	return result;
 }
 
 string CFG::toString ( )
